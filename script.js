@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function displayAdditionalInfo(attribute) {
     const user = JSON.parse(localStorage.getItem('user'));
     if (attribute === 'age') {
-      document.getElementById('info-data').textContent = `Age: ${user.dob.age}`;
+      document.getElementById('info-data').textContent = `${user.dob.age}`;
     } else if (attribute === 'email') {
-      document.getElementById('info-data').textContent = `Email: ${user.email}`;
+      document.getElementById('info-data').textContent = `${user.email}`;
     } else if (attribute === 'phone') {
-      document.getElementById('info-data').textContent = `Phone: ${user.phone}`;
+      document.getElementById('info-data').textContent = `${user.phone}`;
     }
   }
   console.log(document.getElementById('user-name'));
